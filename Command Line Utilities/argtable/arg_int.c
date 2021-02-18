@@ -24,9 +24,13 @@ USA.
 #include "config.h"
 #endif
 
-/* #ifdef HAVE_STDLIB_H */
+#ifdef HAVE_STDLIB_H
 #include <stdlib.h>
-/* #endif */
+#endif
+
+#ifdef HAVE_CTYPE_H
+#include <ctype.h>
+#endif
 
 #include "argtable2.h"
 #include <limits.h>
