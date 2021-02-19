@@ -93,7 +93,7 @@ struct arg_int
    {
    struct arg_hdr hdr;      /* The mandatory argtable header struct */
    int count;               /* Number of matching command line args */
-   int *ival;               /* Array of parsed argument values */
+   long int *ival;          /* Array of parsed argument values */
    };
 
 struct arg_dbl
