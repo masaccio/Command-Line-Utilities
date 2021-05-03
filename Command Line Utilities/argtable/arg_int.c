@@ -320,7 +320,7 @@ struct arg_int* arg_intn(const char* shortopts,
         result->hdr.errorfn   = (arg_errorfn*)errorfn;
 
         /* store the ival[maxcount] array immediately after the arg_int struct */
-        result->ival  = (long int*)(result+1);
+        result->ival  = (int*)(result+1);
         result->count = 0;
         }
     /*printf("arg_intn() returns %p\n",result);*/
